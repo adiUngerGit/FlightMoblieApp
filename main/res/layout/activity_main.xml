@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:textAlignment="center"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/first_server"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:onClick="doneClicked"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.508"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        app:layout_constraintVertical_bias="0.038" />
+
+    <TextView
+        android:id="@+id/second_server"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:onClick="doneClicked"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.508"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/first_server"
+        app:layout_constraintVertical_bias="0.03" />
+
+    <TextView
+        android:id="@+id/third_server"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:onClick="doneClicked"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.475"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/second_server"
+        app:layout_constraintVertical_bias="0.039" />
+
+    <TextView
+        android:id="@+id/fourth_server"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:onClick="doneClicked"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.508"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/third_server"
+        app:layout_constraintVertical_bias="0.047" />
+
+    <TextView
+        android:id="@+id/fifth_server"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:textAlignment="center"
+        android:onClick="doneClicked"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.508"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fourth_server"
+        app:layout_constraintVertical_bias="0.124" />
+
+    <Button
+        android:id="@+id/type_url_button"
+        android:layout_width="190dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="64dp"
+        android:text="Type URL"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/error_text"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:textAlignment="center"
+        android:textColor="#FF1616"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.98" />
+
+    <Button
+        android:id="@+id/connect_button"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="64dp"
+        android:text="Connect"
+        android:textColor="#EF3737"
+        android:textColorHighlight="#D83737"
+        android:textColorHint="#55FF5D"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.777"
+        app:layout_constraintStart_toEndOf="@+id/type_url_button" />
+
+    <EditText
+        android:id="@+id/url_edit_text"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="38dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginBottom="20dp"
+        android:ems="10"
+        android:inputType="textUri"
+        android:text="URL"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/connect_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.363"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fifth_server"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:text="Please choose a server:"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.05" />
+
+    <!--    <Button-->
+<!--        android:id="@+id/enterB"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:onClick="enter"-->
+<!--        android:text="Button"-->
+<!--        tools:layout_editor_absoluteX="155dp"-->
+<!--        tools:layout_editor_absoluteY="394dp" />-->
+
+</androidx.constraintlayout.widget.ConstraintLayout>

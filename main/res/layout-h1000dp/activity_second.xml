@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbarSize="70dp"
+    tools:context=".secondActivity">
+
+
+    <!--    <TextView-->
+    <!--        android:id="@+id/throttleText"-->
+    <!--        android:layout_width="84dp"-->
+    <!--        android:layout_height="17dp"-->
+    <!--        android:text="throttle"-->
+    <!--        app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintHorizontal_bias="0.046"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toBottomOf="@+id/ratherText"-->
+    <!--        app:layout_constraintVertical_bias="0.021" />-->
+
+    <!--    <TextView-->
+    <!--        android:id="@+id/aileronText"-->
+    <!--        android:layout_width="197dp"-->
+    <!--        android:layout_height="23dp"-->
+    <!--        android:layout_marginTop="20dp"-->
+    <!--        android:text="aileron"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintHorizontal_bias="0.048"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toBottomOf="@+id/elevatorText" />-->
+
+<!--    <SeekBar-->
+<!--        android:id="@+id/throttle"-->
+
+<!--        android:layout_width="347dp"-->
+<!--        android:layout_height="78dp"-->
+<!--        android:layout_marginEnd="344dp"-->
+<!--        android:focusable="true"-->
+<!--        android:max="100"-->
+<!--        android:min="-100"-->
+<!--        android:paddingStart="0dp"-->
+<!--        android:progress="0"-->
+<!--        android:rotation="270"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="@+id/constraintLayout"-->
+<!--        app:layout_constraintTop_toTopOf="parent"-->
+<!--        app:layout_constraintVertical_bias="0.7" />-->
+
+<!--    <io.github.controlwear.virtual.joystick.android.JoystickView-->
+<!--        android:id="@+id/joystickView"-->
+<!--        android:layout_width="398dp"-->
+<!--        android:layout_height="408dp"-->
+<!--        android:scrollbarSize="10dp"-->
+<!--        app:JV_backgroundColor="#242327"-->
+<!--        app:JV_borderColor="#E63E3B42"-->
+<!--        app:JV_borderWidth="50dp"-->
+<!--        app:JV_buttonColor="#99A6A5"-->
+<!--        app:JV_buttonSizeRatio="25%"-->
+<!--        app:JV_fixedCenter="true"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.549"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/constraintLayout"-->
+<!--        app:layout_constraintVertical_bias="0.326" />-->
+
+<!--    <SeekBar-->
+<!--        android:id="@+id/rudder"-->
+<!--        android:layout_width="461dp"-->
+<!--        android:layout_height="59dp"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.748"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/joystickView"-->
+<!--        app:layout_constraintVertical_bias="0.306" />-->
+
+<!--    <androidx.constraintlayout.widget.Guideline-->
+<!--        android:id="@+id/guideline"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:orientation="vertical"-->
+<!--        app:layout_constraintGuide_begin="61375dp" />-->
+
+    <!--    <TextView-->
+    <!--        android:id="@+id/elevatorText"-->
+    <!--        android:layout_width="194dp"-->
+    <!--        android:layout_height="33dp"-->
+    <!--        android:layout_marginStart="8dp"-->
+    <!--        android:text="elevato"-->
+    <!--        app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toTopOf="parent"-->
+    <!--        app:layout_constraintVertical_bias="0.075" />-->
+
+    <!--    <TextView-->
+<!--        android:id="@+id/test"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginBottom="215dp"-->
+<!--        android:text="tmpppppp"-->
+<!--        app:layout_constraintBottom_toTopOf="@+id/constraintLayout"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent" />-->
+
+<!--    <androidx.constraintlayout.widget.Guideline-->
+<!--        android:id="@+id/guideline2"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:orientation="horizontal"-->
+<!--        app:layout_constraintGuide_begin="20dp" />-->
+
+<!--    <androidx.constraintlayout.widget.Guideline-->
+<!--        android:id="@+id/guideline3"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:orientation="horizontal"-->
+<!--        app:layout_constraintGuide_begin="20dp" />-->
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="551dp"
+        android:layout_height="405dp"
+        android:layout_marginBottom="96dp"
+        app:layout_constraintBottom_toTopOf="@+id/joystickAndSlidersView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.142"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:src="@tools:sample/avatars" />
+
+    <com.example.myapplication.JoystickAndSlidersView
+        android:id="@+id/joystickAndSlidersView"
+        android:layout_width="wrap_content"
+        android:layout_height="430dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.96" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
