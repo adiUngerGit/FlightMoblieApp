@@ -1,8 +1,7 @@
 # FlightMoblieApp
-app that control on flight server while joistick and get screen shot from the server
+An app that operates a joystick which controlled the flight server and gets screenshots from the server
 
-With each movement of the goystick in the app.
-The application sends a move command to a broker server written in c #.
+With each movement of the joystick in the app its sends a move command to a broker server written in c #.
 The broker server sends a command to the aircraft's server to move the aircraft.
 
 ## Instructions
@@ -23,6 +22,6 @@ Enter the url you want to connect to.
 
 Move the joystick and send commands to the server.
 
-You can get an image from the server every second
+You can get an image from the server every second.
 
 <img width="223" alt="2020-07-19 (12)" src="https://user-images.githubusercontent.com/58906086/87877241-d6ffbf00-c9e5-11ea-95de-261cefb59d5a.png">
